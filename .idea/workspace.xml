@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8942db97-05da-46ba-9291-f9dcadf698f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/repository/userRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/repository/userRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/service/userService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +79,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.LivroApplication.executor": "Run",
+    "Application.UsuarioApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",

@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="livro")
+@Table(name="usuario")
 public class userEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,11 +24,8 @@ public class userEntity {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "favoritos")
-    private int favorito;
-
-    @Column(name = "nota")
-    private Double nota;
+    @Column(name = "senha")
+    private String senha;
 
 
 }

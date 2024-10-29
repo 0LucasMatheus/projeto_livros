@@ -25,12 +25,12 @@ public class userService {
         return userRepository.save(user);
     }
     public void deleteProductByIdService(Integer id){
-        livroRepository.deleteById(id);
+        userRepository.deleteById(id);
     }
-    public userEntity updateProductService(userEntity livro){
-        userEntity updatedProduct = livroRepository.findById(livro.getId()).get();
-        updatedProduct = livro;
-        return livroRepository.save(updatedProduct);
+    public userEntity updateProductService(userEntity user){
+        userEntity updatedProduct = userRepository.findById(user.getId()).get();
+        updatedProduct = user;
+        return userRepository.save(updatedProduct);
     }
 }
 
