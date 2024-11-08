@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -14,6 +16,7 @@ import lombok.Setter;
 @Entity
 @Table(name="livro")
 public class livroEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -24,11 +27,14 @@ public class livroEntity {
     @Column(name = "sinopse")
     private String sinopse;
 
-    @Column(name = "favoritos")
-    private int favorito;
+    @Column(name="testedata")
+    private LocalDate testedata;
 
-    @Column(name = "nota")
-    private Double nota;
+    @Column(name = "isbn")
+    private String isbn;
+
+    @Column(name = "id_autor")
+    private int id_autor;
 
 
 }
