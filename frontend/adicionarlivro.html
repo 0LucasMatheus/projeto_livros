@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adicionar livro</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1> adicinar livro ao site</h1>
-
+    
+        <h1 class="titulo"> adicionar livro ao site</h1>
+    
     <form class="formadd" id="formlivro" name="formlivro">
 
-        <div>
+        <div class="central-div">
+            <div>
             <label for="titulo">título</label>
             <input type="text" name="titulo" id="titulo">
         </div>
         <div>
-            <label for="sinopse">sinopse</label>
+            <label  for="sinopse">sinopse</label>
             <input type="text" name="sinopse" id="sinopse">
         </div>
         <div>
-            <label>testedata</label>
-            <input type="date" name="testedata" id="testedata">
+            <label>publicacao</label>
+            <input type="date" name="publicacao" id="publicacao">
         </div>
         <div>
             <label for="isbn">isbn</label>
             <input type="text" name="isbn" id="isbn">
+        </div>
+        <div>
+            <label for="qtdcapitulos">quantidade de capítulos</label>
+            <input type="int" name="qtdcapitulos" id="qtdcapitulos">
+        </div>
+        <div>
+            <label for="categoria">categoria</label>
+            <select id="categoria" name="categoria">
+                <option value="" selected disabled>Selecione uma categoria...</option>
+                <option value="aventura">Aventura</option>
+                <option value="biografia">Biografia</option>
+                <option value="cientifico">Científico</option>
+                <option value="drama">Drama</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="historico">Histórico</option>
+                <option value="infantil">Infantil</option>
+                <option value="misterio">Mistério</option>
+                <option value="romance">Romance</option>
+                <option value="suspense">Suspense</option>
+                <option value="terror">Terror</option>
+            </select>
         </div>
         <div>
             <label for="id_autor">id do autor</label>
@@ -32,11 +56,14 @@
         </div>
 
         <div>
-            <button type="submit">Cadassstrar</button>
+            <button type="submit">Cadastrar</button>
         </div>
     </form>
-    <p id="mensagem">abaaaadsxdfa</p>
-
+</div>
+    <p id="mensagem"> mensagem</p>
+    <a href="index.html">
+        <button>menu</button>
+    </a>
     <script type="text/javascript" src="scripts/script_addlivro.js"></script>
 
 </body>

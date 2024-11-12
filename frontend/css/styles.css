@@ -1,0 +1,38 @@
+
+:root {
+    --background-color: rgb(95, 95, 95); 
+    --div-color: rgb(201, 100, 100);        
+}
+
+body {
+    background-color: var(--background-color); 
+    height: 100vh;                 
+    font-family: Arial, sans-serif; 
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.central-div {
+    background-color: var(--div-color); 
+    padding: 50px;             
+    border-radius: 20px;       
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.534); 
+    text-align: center;   
+}
+
+.central-div label {
+    color: var(--label-color); 
+    font-size: 1.4em; 
+    display: block;           
+}
+
+
+
+
+

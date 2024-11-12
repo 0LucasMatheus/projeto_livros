@@ -1,4 +1,4 @@
-package com.ms.livro.entity;
+package com.ms.autor.entity;
 
 
 import jakarta.persistence.*;
@@ -14,27 +14,22 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="livro")
-public class livroEntity {
+@Table(name="autor")
+public class autorEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "titulo")
-    private String titulo;
+    @Column(name = "nome")
+    private String nome;
 
-    @Column(name = "sinopse")
-    private String sinopse;
+    @Column(name = "bio")
+    private String bio;
 
-    @Column(name="testedata")
-    private LocalDate testedata;
+    @Column(name="nascimento")
+    private LocalDate nascimento;
 
-    @Column(name = "isbn")
+    @Column(name = "olid")
     private String isbn;
-
-    @Column(name = "id_autor")
-    private int id_autor;
-
-
-}
+    }

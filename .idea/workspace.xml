@@ -5,19 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8942db97-05da-46ba-9291-f9dcadf698f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lucas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/configuration/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/entity/autorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/repository/autorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/service/autorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/src/test/java/com/ms/livro/LivroApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autor/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/listagem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/scripts/listarlivros.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/LivroApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/configuration/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/controller/livroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/livro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/entity/livroEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/entity/livroEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livro/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/livro/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testeapi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/adicionarlivro.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/adicionarlivro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/scripts/script_addlivro.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scripts/script_addlivro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/LivroApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/LivroApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/configuration/CorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/configuration/CorsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/controller/livroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/controller/autorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/entity/livroEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/entity/livroEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/repository/livroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/repository/livroRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com/ms/livro/service/livroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/service/livroService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +112,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/livro/src/main/java/com/ms/livro" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/listalivros/src/main/java/com" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
