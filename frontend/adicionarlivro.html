@@ -10,11 +10,11 @@
     
         <h1 class="titulo"> adicionar livro ao site</h1>
     
-    <form class="formadd" id="formlivro" name="formlivro">
+    <form class="formadd" id="formLivro" name="formLivro">
 
         <div class="central-div">
             <div>
-            <label for="titulo">título</label>
+            <label for="titulo">títulooos</label>
             <input type="text" name="titulo" id="titulo">
         </div>
         <div>
@@ -50,9 +50,13 @@
                 <option value="terror">Terror</option>
             </select>
         </div>
+
         <div>
-            <label for="id_autor">id do autor</label>
-            <input type="number" name="id_autor" id="id_autor">
+            <label for="autor">autor</label>
+            <select id="autor" name="autor">
+                <option value="" selected disabled>Selecione um autor...</option>
+                
+            </select>        
         </div>
 
         <div>
@@ -64,7 +68,7 @@
     <a href="index.html">
         <button>menu</button>
     </a>
-    <script type="text/javascript" src="scripts/script_addlivro.js"></script>
+    <script type="text/javascript" src="scripts/addLivro.js"></script>
 
 </body>
 </html>

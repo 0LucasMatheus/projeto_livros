@@ -30,6 +30,9 @@ public class autorEntity {
     @Column(name="nascimento")
     private LocalDate nascimento;
 
+    @Column(name="morte")
+    private LocalDate morte;
+
     @Column(name = "olid")
-    private String isbn;
+    private String olid;
     }

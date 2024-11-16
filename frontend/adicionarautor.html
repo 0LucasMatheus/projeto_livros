@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <h1 class="titulo"> adicionar autor ao site</h1>
+    
+    <form class="formadd" id="formAutor" name="formAutor">
+
+        <div class="central-div">
+            <div>
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label  for="bio">bio</label>
+            <input type="text" name="bio" id="bio">
+        </div>
+        <div>
+            <label for="nascimento">nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+
+        <label for="vivo">
+            <input type="checkbox" id="vivo" name="vivo" checked>
+            O autor está vivo
+        </label>
+    
+        <!-- Campo de data de morte, inicialmente oculto -->
+        <div id="dataMorteContainer" style="display: none;">
+            <label for="morte">Data de Morte:</label>
+            <input type="date" id="morte" name="morte">
+        </div>
+
+        <div>
+            <label for="olid">olid</label>
+            <input type="text" name="olid" id="olid">
+        </div>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>
+    <p id="mensagem"> mensagem</p>
+    <a href="index.html">
+        <button>menu</button>
+    </a>
+    <script type="text/javascript" src="scripts/addAutor.js"></script>
+
+</body>
+</html>
