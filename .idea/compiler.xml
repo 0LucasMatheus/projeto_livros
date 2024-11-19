@@ -9,14 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="livro" />
         <module name="usuario" />
-        <module name="livro (1)" />
+        <module name="autor" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="autor" options="-parameters" />
       <module name="livro" options="-parameters" />
-      <module name="livro (1)" options="-parameters" />
       <module name="usuario" options="-parameters" />
     </option>
   </component>

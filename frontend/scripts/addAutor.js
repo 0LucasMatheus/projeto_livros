@@ -2,7 +2,6 @@ document.getElementById("formAutor").addEventListener("submit", function(event) 
     event.preventDefault();
     addAutor();
 });
-criarcomboautor()
 
 
 

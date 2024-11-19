@@ -8,6 +8,7 @@ function ListarLivros(livros, autores){
         <th>Autor</th>
         <th>Capa</th>
         <th>Foto do Autor</th>
+        <th>link</th>
     </thead>`;
 
     for(let livro of livros){
@@ -18,6 +19,9 @@ function ListarLivros(livros, autores){
                 <td>${autor.nome}</td>
                 <td><img src="https://covers.openlibrary.org/b/isbn/${livro.isbn}-M.jpg"></td>
                 <td><img src="https://covers.openlibrary.org/a/olid/${autor.olid}-M.jpg"</td>
+                <td>
+                    <a href="livro.html?id=${livro.id}">Ver detalhes</a> 
+                </td>
             </tr>
         `;
     }

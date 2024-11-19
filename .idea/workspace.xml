@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8942db97-05da-46ba-9291-f9dcadf698f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/entity/autorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/entity/autorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/adicionarlivro.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/adicionarlivro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/listagem.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/listagem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/scripts/listarlivros.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/scripts/script_addlivro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/scripts/addAutor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scripts/addAutor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/scripts/addLivro.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scripts/addLivro.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
