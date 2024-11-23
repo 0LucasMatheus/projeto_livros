@@ -21,18 +21,18 @@ public class autorEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "nome")
+    @Column(name = "nome", columnDefinition = "TEXT", nullable = false)
     private String nome;
 
-    @Column(name = "bio")
+    @Column(name = "bio", columnDefinition = "TEXT", nullable = false)
     private String bio;
 
-    @Column(name="nascimento")
+    @Column(name="nascimento", nullable = false)
     private LocalDate nascimento;
 
     @Column(name="morte")
     private LocalDate morte;
 
-    @Column(name = "olid")
+    @Column(name = "olid", nullable = false)
     private String olid;
     }

@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8942db97-05da-46ba-9291-f9dcadf698f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/autenticaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/loginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/registraDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/securityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/securityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/service/autorizacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/scripts/addAutor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scripts/addAutor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/scripts/addLivro.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scripts/addLivro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/entity/autorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/autor/src/main/java/com.ms.autor/entity/autorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/livro/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/entity/livroEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/livro/src/main/java/com.ms.livro/entity/livroEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/repository/userRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/repository/userRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +34,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,32 +83,37 @@
     &quot;accountId&quot;: &quot;6b3f71f1-5132-4fab-b58a-0310d7df9677&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2o38tcQYK3IfPds4xlzaNUnkzKQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AutorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LivroApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UsuarioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lucas/Desktop/projeto/autor&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AutorApplication.executor": "Run",
+    "Application.LivroApplication.executor": "Run",
+    "Application.UsuarioApplication.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lucas/Desktop/projeto/autor",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/livro/src/main/java/com/ms/livro" />
@@ -108,5 +132,245 @@
       <updated>1730087115172</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>51</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/authentication/AuthenticationManager.class</url>
+          <line>10</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/core/AuthenticationException.class</url>
+          <line>9</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/core/AuthenticationException.class</url>
+          <line>13</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/core/AuthenticationException.class</url>
+          <line>7</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/loginResponseDTO.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/loginResponseDTO.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/entity/userEntity.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/security/tokenService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/usuario/src/main/java/com/ms/usuario/controller/autenticaController.java</url>
+          <line>50</line>
+          <properties class="com.ms.usuario.controller.autenticaController" method="register">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/authentication/AuthenticationManager.class</url>
+          <line>11</line>
+          <properties class="org.springframework.security.authentication.AuthenticationManager" method="authenticate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/core/AuthenticationException.class</url>
+          <line>8</line>
+          <properties class="org.springframework.security.core.AuthenticationException" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar!/org/springframework/security/core/AuthenticationException.class</url>
+          <line>12</line>
+          <properties class="org.springframework.security.core.AuthenticationException" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

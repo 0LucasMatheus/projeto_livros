@@ -21,25 +21,25 @@ public class livroEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "titulo")
+    @Column(name = "titulo", columnDefinition = "TEXT", nullable = false)
     private String titulo;
 
-    @Column(name = "sinopse")
+    @Column(name = "sinopse", columnDefinition = "TEXT", nullable = false)
     private String sinopse;
 
-    @Column(name="publicacao")
+    @Column(name="publicacao", nullable = false)
     private LocalDate publicacao;
 
-    @Column(name = "isbn")
+    @Column(name = "isbn", nullable = false)
     private String isbn;
 
-    @Column(name = "categoria")
+    @Column(name = "categoria", nullable = false)
     private String categoria;
 
-    @Column(name = "qtdcapitulos")
+    @Column(name = "qtdcapitulos", nullable = false)
     private int qtdcapitulos;
 
-    @Column(name = "id_autor")
+    @Column(name = "id_autor", nullable = false)
     private int id_autor;
 
 
