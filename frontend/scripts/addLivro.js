@@ -1,32 +1,35 @@
-document.getElementById("formLivro").addEventListener("submit", function(event) {
-    event.preventDefault();
-    addlivro();
-});
-
 async function carregarAutoresNoCombo() {
-    const url = "http://localhost:8083/autor"; // Endpoint para buscar autores
+    const url = "http://localhost:8083/autor"; 
     const dados = await fetch(url, { method: "GET" });
     if (dados.status === 200) {
-            document.getElementById("mensagem").innerHTML = "Olá, criatura!";
+            document.getElementById("mensagem").innerHTML = "autores carregados!";
         } else {
-            document.getElementById("mensagem").innerHTML = "Olá, mingming!";
+            document.getElementById("mensagem").innerHTML = "erro ao carregard autores!";
+            return;
         }
         const autores = await dados.json();
-        let comboAutores = document.getElementById("autor");
+        let comboAutores = document.getElementById("id_autor");
+        let comboAutorescarregado = `
+        <option value="" selected disabled>Selecione um autor...</option>
+    `;
+        for(let autor of autores){
+            comboAutorescarregado += `
+                <option value="${autor.id}">${autor.nome}</option>
+            `;
+        }
+        comboAutores.innerHTML=comboAutorescarregado;
+    
+};
 
-        // Limpar opções anteriores (caso já existam)
-        comboAutores.innerHTML = '<option value="" selected disabled>Selecione um autor...</option>';
-
-        // Preencher o combobox com os autores
-        autores.forEach(autor => {
-            let option = document.createElement("option");
-            option.value = autor.id; // O valor será o ID do autor
-            option.textContent = autor.id; // O texto exibido será o nome do autor
-            comboAutores.appendChild(option);
-        })};
-
-async function addlivro() {
+async function addLivro() {
     const formhtml = document.querySelector("#formLivro");
+
+
+  if (!formhtml.checkValidity()) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
     const formData = new FormData(formhtml);
     const objetoLivro = Object.fromEntries(formData);
 
@@ -40,11 +43,9 @@ async function addlivro() {
 
         const result = await fetch(url, option);
         if (result.status === 201) {
-            alert('Cadastrado com sucesso');
-            document.getElementById("mensagem").innerHTML = "Olá, bombom!";
+            document.getElementById("mensagem").innerHTML = "cadastrado com sucesso!";
         } else {
-            alert('Erro ao cadastrar');
-            document.getElementById("mensagem").innerHTML = "Olá, falha!";
+            document.getElementById("mensagem").innerHTML = "erro ao cadastrar livro!";
         }
    
 }

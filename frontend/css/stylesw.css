@@ -1,0 +1,354 @@
+/* Definindo variáveis para cores */
+:root {
+    --cor-fundo: #8c8c8f;
+    --cor-cabecalho: #7d7de0;
+    --cor-popup: #28286486;
+    --cor-titulo: #001524;
+    --cor-texto: #222222;
+    --cor-label: #180a0a;
+    --cor-form: #62c7cea2;
+    --cor-borda: #303030;
+    --cor-botao: #3498db;
+    --cor-botao-hover: #207bb8;
+    --cor-mensagem: #e74c3c;
+    --cor-input: #72a0d491;
+}
+
+/* Resetando margens e paddings para consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+}
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ cabeçalho
+*/
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-texto);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+
+    max-width: 400px; 
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--cor-borda-input);
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    background-color: var(--cor-input-fundo);
+    color: var(--cor-texto-header);
+    font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: var(--cor-placeholder);
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-header);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.profile-img:hover {
+    opacity: 0.8;
+}
+
+.profile-popup {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    background-color: var(--cor-popup);
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+    text-align: center;
+}
+
+.popup-btn {
+    display: block;
+    background-color: var(--cor-botao);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.popup-btn:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+
+
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ forms
+*/
+
+
+h1 {
+    color: var(--cor-titulo);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formadd {
+    background-color: var(--cor-form);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.formadd div {
+    display: flex;
+    flex-direction: column;
+}
+.formadd button{
+    margin-top: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--cor-label);
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 15px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="int"],
+input[type="password"],
+select {
+    background-color: var(--cor-input);
+}
+
+
+#sinopse {
+    height: 100px;
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+#mensagem {
+    color: var(--cor-mensagem);
+    margin-top: 20px;
+}
+
+/*-------------------------------------- pagina de livro---------------------*/
+/* Estilos gerais para o corpo da página */
+
+
+.book-container {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    width: 35%;
+    padding-right: 20px;
+}
+
+.capa-livro {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.autor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.foto-autor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nome-autor {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right-side {
+    width: 65%;
+}
+
+.titulo-livro {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.genero-livro, .capitulos-livro {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.sinopse-livro {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Livros recomendados */
+.livros-recomendados {
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.livros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.livro-item {
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.livro-capa {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.livro-titulo {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333;
+}
+
+
+
+
+
+

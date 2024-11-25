@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Read Log</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="imagens/icone.webp" type="image/x-icon">
+    <link rel="icon" href="imagens/icone.webp" type="image/x-icon" />
   </head>
   <body>
     <div id="cabeçalho"> <!-- inicio do cabecalho --->
@@ -26,7 +26,7 @@
         </div>
         <div class="profile">
           <button class="profile-btn" onclick="popperfil()">
-            <img id="imagemprofile"
+            <img
               src="imagens/perfil.png"
               alt="Ícone do Perfil"
               class="profile-img"
@@ -47,13 +47,45 @@
     </div> <!-- fim do cabecalho --->
 
 
-  <div class="book-grid" id="bookGrid">
-    <!-- Livros  -->
-  </div>
-
-    <script type="text/javascript" src="scripts/exibirLivros.js"></script>
 
 
+    <h1>cadastre-se e tenha controle do seu processo de leitura de livros!</h1>
 
+    <form class="formadd" id="formUsuario" name="formUsuario">
+      <div>
+        <label for="login">nickname</label>
+        <input type="text" name="nome" id="nome"  autocomplete="off" required />
+      </div>
+      <div>
+        <label for="senha">senha</label>
+        <input type="password" name="senha" id="senha" autocomplete="off" required />
+      </div>
+      <div>
+        <label for="senha2">confirmar senha</label>
+        <input type="password" name="senha2" id="senha2"  autocomplete="off" required />
+      </div>
+      <div>
+        <select id="role" name="role">
+          <option value="USER" selected>user</option>
+          <option value="ADM">adm</option>
+        </select>
+      </div>
+      <div>
+        <button type="button" onclick="verificarSenhas()">registrar</button>
+      </div>
+    </form>
+    <script>
+      function verificarSenhas() {
+    const senha = document.getElementById("senha").value;
+    const confirmarSenha = document.getElementById("senha2").value;
+
+    if (senha !== confirmarSenha) {
+        alert("As senhas não estão iguais. Por favor, verifique!");
+    } else {
+        addUser()
+    }
+}
+
+    </script>
   </body>
 </html>

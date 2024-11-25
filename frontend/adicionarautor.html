@@ -1,56 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>adicionar autor</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagens/icone.webp" type="image/x-icon">
 </head>
+
 <body>
+    <div id="cabeçalho"> <!-- inicio do cabecalho --->
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="imagens/icone.webp"
+              alt="Logo Read Log"
+              class="logo-img"
+            />
+          </a>
+          <span class="logo-text">Read Log</span>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." class="search-input" />
+          <button class="search-btn" onclick="pesquisar()">🔍</button>
+        </div>
+        <div class="profile">
+          <button class="profile-btn" onclick="popperfil()">
+            <img
+              src="imagens/perfil.png"
+              alt="Ícone do Perfil"
+              class="profile-img"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div id="profile-popup" class="profile-popup">
+        <a href="cadastro.html">
+          <button class="popup-btn">Cadastrar</button>
+        </a>
+        <a href="login.html">
+          <button class="popup-btn">Logar</button>
+        </a>
+      </div>
+      <script type="text/javascript" src="scripts/cabeçalho.js"></script>
+    </div> <!-- fim do cabecalho --->
+
+
+
     
+
+
     <h1 class="titulo"> adicionar autor ao site</h1>
-    
+
     <form class="formadd" id="formAutor" name="formAutor">
 
         <div class="central-div">
             <div>
-            <label for="nome">nome</label>
-            <input type="text" name="nome" id="nome">
-        </div>
-        <div>
-            <label  for="bio">bio</label>
-            <input type="text" name="bio" id="bio">
-        </div>
-        <div>
-            <label for="nascimento">nascimento</label>
-            <input type="date" name="nascimento" id="nascimento">
-        </div>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome" required autocomplete="off">
+            </div>
+            <div>
+                <label for="bio">bio</label>
+                <input type="text" name="bio" id="bio" required autocomplete="off">
+            </div>
+            <div>
+                <label for="nascimento">nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" required >
+            </div>
 
-        <label for="vivo">
-            <input type="checkbox" id="vivo" name="vivo" checked>
-            O autor está vivo
-        </label>
-    
-        <!-- Campo de data de morte, inicialmente oculto -->
-        <div id="dataMorteContainer" style="display: none;">
-            <label for="morte">Data de Morte:</label>
-            <input type="date" id="morte" name="morte">
-        </div>
+            <label for="vivo">
+                <input type="checkbox" id="vivo" name="vivo" checked>
+                O autor está vivo
+            </label>
 
-        <div>
-            <label for="olid">olid</label>
-            <input type="text" name="olid" id="olid">
-        </div>
-        <div>
-            <button type="submit">Cadastrar</button>
-        </div>
+            <div id="dataMorteContainer" style="display: none;">
+                <label for="morte">Data de Morte:</label>
+                <input type="date" id="morte" name="morte">
+            </div>
+
+            <div>
+                <label for="olid">olid</label>
+                <input type="text" name="olid" id="olid" required autocomplete="off">
+            </div>
+            <div>
+                <button type="button" onclick="addAutor()">Cadastsrar</button>
+            </div>
     </form>
-</div>
+    </div>
     <p id="mensagem"> mensagem</p>
     <a href="index.html">
         <button>menu</button>
     </a>
+
     <script type="text/javascript" src="scripts/addAutor.js"></script>
 
 </body>
+
 </html>

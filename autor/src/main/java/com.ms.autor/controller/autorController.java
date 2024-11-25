@@ -29,6 +29,18 @@ public class autorController {
         Optional<autorEntity> autor = autorService.getProductService(id);
         return ResponseEntity.ok(autor);
     }
+
+    @GetMapping("/names")
+    public ResponseEntity<List<Object[]>> getNameAndIdService() {
+        List<Object[]> autores = autorService.getNameAndIdService();
+
+        if (autores.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(autores);
+    }
+
+
     //insere produto na base de dados
     @PostMapping("/add")
     public ResponseEntity<autorEntity> addProduct(@RequestBody autorEntity autor){

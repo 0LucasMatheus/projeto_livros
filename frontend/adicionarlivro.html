@@ -5,37 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adicionar livro</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagens/icone.webp" type="image/x-icon">
 </head>
 <body>
-    
+<div id="cabeçalho"> <!-- inicio do cabecalho --->
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="imagens/icone.webp"
+              alt="Logo Read Log"
+              class="logo-img"
+            />
+          </a>
+          <span class="logo-text">Read Log</span>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." class="search-input" />
+          <button class="search-btn" onclick="pesquisar()">🔍</button>
+        </div>
+        <div class="profile">
+          <button class="profile-btn" onclick="popperfil()">
+            <img
+              src="imagens/perfil.png"
+              alt="Ícone do Perfil"
+              class="profile-img"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div id="profile-popup" class="profile-popup">
+        <a href="cadastro.html">
+          <button class="popup-btn">Cadastrar</button>
+        </a>
+        <a href="login.html">
+          <button class="popup-btn">Logar</button>
+        </a>
+      </div>
+      <script type="text/javascript" src="scripts/cabeçalho.js"></script>
+    </div> <!-- fim do cabecalho --->
+
         <h1 class="titulo"> adicionar livro ao site</h1>
     
     <form class="formadd" id="formLivro" name="formLivro">
 
         <div class="central-div">
             <div>
-            <label for="titulo">títulooos</label>
-            <input type="text" name="titulo" id="titulo">
+            <label for="titulo">título do livro</label>
+            <input type="text" name="titulo" id="titulo" autocomplete="off" required>
         </div>
         <div>
             <label  for="sinopse">sinopse</label>
-            <input type="text" name="sinopse" id="sinopse">
+            <input type="text" name="sinopse" id="sinopse" autocomplete="off" required>
         </div>
         <div>
-            <label>publicacao</label>
-            <input type="date" name="publicacao" id="publicacao">
+            <label for="publicacao">data de publicacao</label>
+            <input type="date" name="publicacao" id="publicacao" autocomplete="off" required>
         </div>
         <div>
             <label for="isbn">isbn</label>
-            <input type="text" name="isbn" id="isbn">
+            <input type="text" name="isbn" id="isbn" autocomplete="off" required>
         </div>
         <div>
             <label for="qtdcapitulos">quantidade de capítulos</label>
-            <input type="int" name="qtdcapitulos" id="qtdcapitulos">
+            <input type="int" name="qtdcapitulos" id="qtdcapitulos" autocomplete="off" required>
         </div>
         <div>
             <label for="categoria">categoria</label>
-            <select id="categoria" name="categoria">
+            <select id="categoria" name="categoria" required>
                 <option value="" selected disabled>Selecione uma categoria...</option>
                 <option value="aventura">Aventura</option>
                 <option value="biografia">Biografia</option>
@@ -52,15 +90,15 @@
         </div>
 
         <div>
-            <label for="autor">autorsss</label>
-            <select id="id_autor" name="id_autor">
-                <option value="69" selected disabled>Selecione um autor...</option>
+            <label for="autor">autor</label>
+            <select id="id_autor" name="id_autor" required>
+                <option value="" selected disabled>Selecione um autor...</option>
                 
             </select>        
         </div>
 
         <div>
-            <button type="button" onclick="addLivro(event)">cadastrar</button>
+            <button type="button" onclick="addLivro()">cadastrar</button>
         </div>
     </form>
 </div>
@@ -68,7 +106,7 @@
     <a href="index.html">
         <button>menu</button>
     </a>
-    <script type="text/javascript" src="scripts/scriptslivro.js"></script>
+    <script type="text/javascript" src="scripts/addLivro.js"></script>
 
 </body>
 </html>

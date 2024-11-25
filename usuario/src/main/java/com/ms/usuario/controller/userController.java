@@ -20,30 +20,60 @@ public class userController {
 
     @GetMapping
     public ResponseEntity<List<userEntity>> getAllProducts() {
-        List<userEntity> livros = userService.getAllProductsService();
-        return ResponseEntity.ok(livros);
+        List<userEntity> users = userService.getAllProductsService();
+        if (users.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(users);
     }
-    // retorna os dados de um produto cujo id é fornecido
+
+    // Retorna os dados de um produto cujo ID é fornecido
     @GetMapping("/{id}")
-    public ResponseEntity<Optional<userEntity>> getProductService(@PathVariable Integer id) {
+    public ResponseEntity<userEntity> getProductService(@PathVariable Integer id) {
         Optional<userEntity> user = userService.getProductService(id);
-        return ResponseEntity.ok(user);
+        if (user.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(user.get());
     }
-    //insere produto na base de dados
+
+
+    // Insere produto na base de dados
     @PostMapping("/add")
-    public ResponseEntity<userEntity> addProduct(@RequestBody userEntity user){
+    public ResponseEntity<userEntity> addProduct(@RequestBody userEntity user) {
         userEntity newProduct = userService.insertProductService(user);
         return new ResponseEntity<>(newProduct, HttpStatus.CREATED);
     }
-    //atualiza produto na base de dados
-    @PutMapping("/update")
-    public ResponseEntity<userEntity> updateProduct(@RequestBody userEntity user){
-        userEntity updatedProduct = userService.updateProductService(user);
-        return ResponseEntity.ok(updatedProduct);
+
+    @PostMapping("/login")
+    public ResponseEntity<userEntity> loginService(@RequestBody userEntity user) {
+        userEntity userRecebido = userService.compara(user);
+        if (userRecebido == null) {
+            // Se não encontrar o usuário ou as credenciais estiverem incorretas
+            return new ResponseEntity<>(HttpStatus.FORBIDDEN);  // Retorna 403 se não for válido
+        }
+        // Caso as credenciais sejam válidas
+        return new ResponseEntity<>(userRecebido, HttpStatus.OK);  // Retorna os dados do usuário
     }
-    //delete os dados de um produto cujo id é fornecido
+
+    // Atualiza produto na base de dados
+    @PutMapping("/update")
+    public ResponseEntity<userEntity> updateProduct(@RequestBody userEntity user) {
+        Optional<userEntity> userexist = userService.getProductService(user.getId());
+        if (userexist.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        userEntity useratualizado = userService.updateProductService(user);
+        return ResponseEntity.ok(useratualizado);
+    }
+
+    // Deleta os dados de um produto cujo ID é fornecido
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Void> deleteProduct(@PathVariable Integer id){
+    public ResponseEntity<Void> deleteProduct(@PathVariable Integer id) {
+        Optional<userEntity> userexist = userService.getProductService(id);
+        if (userexist.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
         userService.deleteProductByIdService(id);
         return ResponseEntity.noContent().build();
     }

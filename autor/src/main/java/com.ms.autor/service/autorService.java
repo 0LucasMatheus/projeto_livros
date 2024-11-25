@@ -21,6 +21,12 @@ public class autorService {
     public Optional<autorEntity> getProductService(Integer id){
         return autorRepository.findById(id);
     }
+
+    public List<Object[]> getNameAndIdService() {
+        return autorRepository.findNomeEId();
+    }
+
+
     public autorEntity insertProductService(autorEntity autor){
         return autorRepository.save(autor);
     }

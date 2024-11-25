@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Livro</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="imagens/icone.webp" type="image/x-icon">
 </head>
 <body>
 <div id="cabeçalho"> <!-- inicio do cabecalho --->
@@ -45,39 +46,25 @@
       <script type="text/javascript" src="scripts/cabeçalho.js"></script>
     </div> <!-- fim do cabecalho --->
 
+    <h1>entre na sua conta!</h1>
 
-    
-    <div class="book-container">
-
-        <!-- Capa do Livro e Informações do Autor -->
-        <div class="left-side">
-            <!-- Capa do livro -->
-            <img id="capa-livro" class="capa-livro" src="" alt="Capa do Livro">
-
-            <!-- Foto do autor -->
-            <div class="autor-info">
-                <img id="foto-autor" class="foto-autor" src="" alt="Foto do Autor">
-                <p id="nome-autor" class="nome-autor"></p>
-            </div>
-        </div>
-
-        <!-- Informações principais do livro -->
-        <div class="right-side">
-            <h1 id="titulo-livro" class="titulo-livro">Título do Livro</h1>
-
-            <p id="genero-livro" class="genero-livro">Gênero: <span></span></p>
-            <p id="capitulos-livro" class="capitulos-livro">Capítulos: <span></span></p>
-
-            <p id="sinopse-livro" class="sinopse-livro">Sinopse: <span></span></p>
-
-            <div class="actions">
-                <button id="add-lista" class="btn">Adicionar à Lista</button>
-            </div>
-        </div>
-    </div>
-    
-    <script type="text/javascript" src="scripts/informacoesLivro.js"></script>
+    <form class="formadd" id="formUsuario" name="formUsuario">
+      <div>
+        <label for="login">nickname</label>
+        <input type="text" name="nome" id="nome" />
+      </div>
+      <div>
+        <label for="password">senha</label>
+        <input type="text" name="senha" id="senha" />
+      </div>
+      <div>
+        <button type="button" onclick="login()">entrar</button>
+      </div>
+    </form>
 
 
-</body>
+    <script type="text/javascript" src="scripts/cabeçalho.js"></script>
+  </body>
+
 </html>
+

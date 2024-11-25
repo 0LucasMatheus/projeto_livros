@@ -21,6 +21,12 @@ public class livroService {
     public Optional<livroEntity> getProductService(Integer id){
         return livroRepository.findById(id);
     }
+
+
+    public List<Object[]> getTituloseIsbns() {
+        return livroRepository.findTituloseIsbns();
+    }
+
     public livroEntity insertProductService(livroEntity livro){
         return livroRepository.save(livro);
     }

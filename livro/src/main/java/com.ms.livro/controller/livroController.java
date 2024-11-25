@@ -29,12 +29,25 @@ public class livroController {
         Optional<livroEntity> livro = livroService.getProductService(id);
         return ResponseEntity.ok(livro);
     }
+
+    @GetMapping("/tituloseisbns")
+    public ResponseEntity<List<Object[]>> getTituloseIsbns() {
+        List<Object[]> livros = livroService.getTituloseIsbns();
+
+        if (livros.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+        return ResponseEntity.ok(livros);
+    }
+
     //insere produto na base de dados
     @PostMapping("/add")
     public ResponseEntity<livroEntity> addProduct(@RequestBody livroEntity livro){
         livroEntity newProduct = livroService.insertProductService(livro);
         return new ResponseEntity<>(newProduct, HttpStatus.CREATED);
     }
+
+
     //atualiza produto na base de dados
     @PutMapping("/update")
     public ResponseEntity<livroEntity> updateProduct(@RequestBody livroEntity livro){
